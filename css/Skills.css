@@ -13,7 +13,7 @@
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    
 }
 
 .skills-subtitle{
@@ -97,6 +97,7 @@
 
     .skills__column{
         grid-template-columns: 1fr;
+        margin-top: 15px;
     }
 
     .skill-box{

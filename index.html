@@ -29,35 +29,36 @@
     <title> Mi Portafolio</title>
 </head>
 <body>
-    <!-- Sección del Menú  -->
+    
     <div class="tudo">
+        
         <img class="btn-whatsapp" src="https://clientes.dongee.com/whatsapp.png" width="64" height="64" alt="Whatsapp" onclick="window.location.href='https://wa.me/5493425387363?text=¡Hola!%20Estoy%20interesadx%20en%20tu%20curriculum'">
+        
+        <!-- Sección del Menú  -->
+        <section class="menu">
+            <div class="menu__container">
+            <header class="menu__header">
+                <h3 class="menu__title">JA | Math 🧮 | Dev. 💻</h3>
+            </header>
+            <nav class="menu__nav">
+                <ul class="menu__list">
+                    <li class="menu__list__item"><a href="#inicio" active>Inicio</a></li>
+                    <li class="menu__list__item"><a href="#sobre-mi">Sobre mí</a></li>
+                    <li class="menu__list__item"><a href="#skills">Skills</a></li>
+                    <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
+                    <li class="menu__list__item"><a href="#formacion">Formación</a></li>
+                    <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
+                    <li class="menu__list__item"><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+                <div class="menu__burguer">
+                <i class="bi bi-list menu__icon-burguer"></i>
+                <i class="bi bi-x menu__icon-x menu_hidden"></i>
+                </div>
+            </div>
+        </section>
 
-
-    <section class="menu">
-        <div class="menu__container"></div>
-        <header class="menu__header">
-            <h3 class="menu__title">JA | Math 🧮 | Dev. 💻</h3>
-        </header>
-        <nav class="menu__nav">
-            <ul class="menu__list">
-                <li class="menu__list__item"><a href="#inicio" active>Inicio</a></li>
-                <li class="menu__list__item"><a href="#sobre-mi">Sobre mí</a></li>
-                <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-                <li class="menu__list__item"><a href="#formacion">Formación</a></li>
-                <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
-                <li class="menu__list__item"><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-        <div class="menu__burguer">
-            <i class="bi bi-list menu__icon-burguer"></i>
-            <i class="bi bi-x menu__icon-x menu_hidden"></i>
-        </div>
-    </div>
-    </section>
-
-    <!-- Sección del Header/Title/Hero -->
+        <!-- Sección del Header/Title/Hero -->
     <section class="title" id="inicio">
         <div class="title__div">
             <img class="title__profile" src="assets\profile.png">
@@ -88,7 +89,7 @@
             <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
         </div>
         <div >
-            <!-- Si quieres, pon tú firma acá! -->
+            
             <img class="about__signature" src="assets\signature.png">
         </div>
     </section>
@@ -138,15 +139,15 @@
                         <h5 class="skill-text">PYTHON</h5>
                     </div>
                     <div class="skill-box-added">
-                        <img class="skill-icon-added" src="assets/qlik.png">
+                        <img class="skill-icon-added" src="assets/skills/qlik.png">
                         <h5 class="skill-text">QLIK</h5>
                     </div>
                     <div class="skill-box-added">
-                        <img class="skill-icon-added" src="assets/UE_Logo_Black_Centered.png">
+                        <img class="skill-icon-added" src="assets/skills/UE_Logo_Black_Centered.png">
                         <h5 class="skill-text">UNREAL ENGINE</h5>
                     </div>
                     <div class="skill-box-added">
-                        <img class="skill-icon-added" src="assets/pixijs.ico">
+                        <img class="skill-icon-added" src="assets/skills/pixijs.ico">
                         <h5 class="skill-text-added">PIXI.JS</h5>
                     </div>
                     
@@ -166,11 +167,11 @@
                     </div>
                     <div class="skill-box">
                         <i class="fa-solid fa-file skill-icon"></i>
-                        <h5 class="skill-text">COMPROMetido</h5>
+                        <h5 class="skill-text">COMPROMiso</h5>
                     </div>
                     <div class="skill-box">
                         <i class="fa-solid fa-brain skill-icon"></i>
-                        <h5 class="skill-text">growth mindset</h5>
+                        <h5 class="skill-text">pensamiento crítico</h5>
                     </div>
                     <div class="skill-box">
                         <i class="fa-solid fa-child-reaching skill-icon"></i>
@@ -189,12 +190,204 @@
                         <h5 class="skill-text">Proactivo</h5>
                     </div>
                     <div class="skill-box">
-                        <i class="fa-solid fa-dumbbell skill-icon"></i>
-                        <h5 class="skill-text">Resiliencia</h5>
+                        <i class="fa-solid fa-gears skill-icon"></i>
+                        <h5 class="skill-text">adaptabilidad</h5>
                     </div>
                     <div class="skill-box">
                         <i class="fa-solid fa-hand-holding-hand skill-icon"></i>
                         <h5 class="skill-text">Empatía</h5>
+                    </div>
+                    <div class="skill-box">
+                        <i class="fa-solid fa-circle-check skill-icon"></i>
+                        <h5 class="skill-text">SCRUM</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Formación académica -->
+    <section class="academic" id="formacion">
+        <div class="academic_container container">
+            <h3 class="academic__title" >Formación</h3>
+            <h2 class="academic__subtitle center" >Estudios IT</h2>
+            <div class="academic__courses">
+                <hr class="divid center">
+                <div class="academic__courses__box">
+                    <ul class="academic__courses__list">
+                        <li class="academic__courses__item__title"><h3>Fundación Proydesa</h3></li>
+                        <li class="academic__courses__item__subtitle"><p>Programación Java</p></li>
+                        <li class="academic__courses__item__img"><a href="https://www.proydesa.org/portal/index.php"><img
+                            class="img__bw"
+                            src="assets/academic/1-proydesa_bw.jpg"
+                            alt="Esc-Normal"
+                          />
+                          <img
+                            src="assets/academic/1-proydesa.jpg"
+                            alt="Esc-Normal"
+                          /></a></li>
+                    </ul>
+                </div>
+                <div class="academic__courses__box">
+                    <ul class="academic__courses__list">
+                        <li class="academic__courses__item__title"><h3>UBA IALAB</h3></li>
+                        <li class="academic__courses__item__subtitle"><p>Programa básico multidisciplinario</p></li>
+                        <li class="academic__courses__item__subtitle"><p>de formación en Datos e Inteligencia Artificial</p></li>
+                        <li class="academic__courses__item__img"><a href="https://ialab.com.ar/"><img
+                            class="img__bw"
+                            src="assets/academic/2-ialab_bw.jpg"
+                            alt="Esc-Normal"
+                          />
+                          <img
+                            src="assets/academic/2-ialab.jpg"
+                            alt="Esc-Normal"
+                          /></a></li>
+                    </ul>
+                </div>
+                <div class="academic__courses__box">
+                    <ul class="academic__courses__list">
+                        <li class="academic__courses__item__title"><h3>Program.ar</h3></li>
+                        <li class="academic__courses__item__subtitle"><p>La programación y su didáctica</p></li>
+                        <li class="academic__courses__item__img"><a href="https://program.ar/"><img
+                            class="img__bw"
+                            src="assets/academic/3-programAr_bw.jpg"
+                            alt="Program.ar"
+                          />
+                          <img
+                            src="assets/academic/3-programAr.jpg"
+                            alt="Program.ar"
+                          /></a></li>
+                    </ul>
+                </div>
+                <div class="academic__courses__box">
+                    <ul class="academic__courses__list">
+                        <li class="academic__courses__item__title"><h3>Capital ACTIVA - MCSF</h3></li>
+                        <li class="academic__courses__item__subtitle"><p>Ciclo de capacitaciones en nuevas tecnologías:</p></li>
+                        <li class="academic__courses__item__subtitle"><p>Unreal Engine</p></li>
+                        <li class="academic__courses__item__img"><a href="https://santafeciudad.gov.ar/"><img
+                            class="img__bw"
+                            src="assets/academic/4-unreal_bw.jpg"
+                            alt="Unreal"
+                          />
+                          <img
+                            src="assets/academic/4-unreal.jpg"
+                            alt="Unreal"
+                          /></a></li>
+                    </ul>
+                </div>
+                <div class="academic__courses__box">
+                    <ul class="academic__courses__list">
+                        <li class="academic__courses__item__title"><h3>ALURA Latam</h3></li>
+                        <li class="academic__courses__item__subtitle"><p>Formación en Desarrollo Full Stack</p></li>
+                        <li class="academic__courses__item__img"><a href="https://www.aluracursos.com/"><img
+                            class="img__bw"
+                            src="assets/academic/5-alura_bw.jpg"
+                            alt="Esc-Normal"
+                          />
+                          <img
+                            src="assets/academic/5-alura.jpg"
+                            alt="Esc-Normal"
+                          /></a></li>
+                    </ul>
+                </div>
+                <div class="academic__courses__box">
+                    <ul class="academic__courses__list">
+                        <li class="academic__courses__item__title"><h3>Distrito del conocimiento</h3></li>
+                        <li class="academic__courses__item__subtitle"><p>Capacitación en Oficios de la Economía del Conocimiento:</p></li>
+                        <li class="academic__courses__item__subtitle"><p>Desarrollo de Videojuegos</p></li>
+                        <li class="academic__courses__item__img"><a href="https://linktr.ee/therabbitholegames"><img
+                            class="img__bw"
+                            src="assets/academic/6-pixi_bw.jpg"
+                            alt="PixiJS"
+                          />
+                          <img
+                            src="assets/academic/6-pixi.jpg"
+                            alt="PixiJS"
+                          /></a></li>
+                    </ul>
+                </div>
+                
+                
+            </div>
+                <h2 class="academic__subtitle center" >Otras formaciones</h2>
+                <div class="academic__courses">
+                <hr class="divid">
+                <div class="academic__courses__box">
+                    <ul class="academic__courses__list">
+                        <li class="academic__courses__item__title"><h3>Escuela Normal Superior nro 32</h3></li>
+                        <li class="academic__courses__item__subtitle"><p>Profesorado en Matemática</p></li>
+                        <li class="academic__courses__item__img"><a href="https://www.escuelanormal32.edu.ar/"><img
+                            class="img__bw"
+                            src="assets/academic/1-normal_bw.png"
+                            alt="Esc-Normal"
+                          />
+                          <img
+                            src="assets/academic/1-normal.png"
+                            alt="Esc-Normal"
+                          /></a></li>
+                    </ul>
+                </div>
+                <div class="academic__courses__box">
+                    <ul class="academic__courses__list">
+                        <li class="academic__courses__item__title"><h3>INESI</h3></li>
+                        <li class="academic__courses__item__subtitle"><p>Diplomado en Sexualidades, derechos</p></li>
+                        <li class="academic__courses__item__subtitle"><p>y diversidad</p></li>
+                        <li class="academic__courses__item__img"><a href="https://inesi.com.ar/"><img
+                            class="img__bw"
+                            src="assets/academic/2-inesi_bw.jpg"
+                            alt="Esc-Normal"
+                          />
+                          <img
+                            src="assets/academic/2-inesi.jpg"
+                            alt="Esc-Normal"
+                          /></a></li>
+                    </ul>
+                </div>
+                <div class="academic__courses__box">
+                    <ul class="academic__courses__list">
+                        <li class="academic__courses__item__title"><h3>Yuan Chen</h3></li>
+                        <li class="academic__courses__item__subtitle"><p>Wu Shu - Kung Fu</p></li>
+                        <li class="academic__courses__item__img"><img
+                            class="img__bw"
+                            src="assets/academic/3-yuanchen_bw.jpg"
+                            alt="Esc-Normal"
+                          />
+                          <img
+                            src="assets/academic/3-yuanchen.jpg"
+                            alt="Esc-Normal"
+                          /></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Experiencia Profesional/Proyectos-->
+    <section class="experience" id="xp">
+        <div class="experience_container container">
+            <h3 class="experience__section__title">Proyectos IT</h3>
+            <h2 class="experience__section__subtitle center" >Juegos 🕹️</h2>
+            <div class="experience__games">
+                <hr class="divid">
+                <div class="experiencie__box">
+                    <h2 class="experience__title">Bodies Rockeritos</h2>
+                    <h3 class="experience__text">Website con e-commerce <i class="bi bi-cart3"></i></h3>
+                    <a href="https://rockeritos.ar" target="_blank">
+                        <div class="experience__img" id="wordpress-1"></div>
+                    </a>
+                    <div class="experience__description">
+                        <span class="experience__demo"><a class="button" href="https://rockeritos.ar">Ver demo <i class="bi bi-globe button-icon"></i></a></span>
+                    </div>
+                </div>
+
+                <div class="experiencie__box">
+                    <h2 class="experience__title">Hernán Leyez - fotografía</h2>
+                    <h3 class="experience__text">Website con portfolio fotográfico <i class="bi bi-camera-fill"></i></h3>
+                    <a href="https://hernanleyez.com.ar" target="_blank">
+                        <div class="experience__img" id="wordpress-2"></div>
+                    </a>
+                    <div class="experience__description">
+                        <span class="experience__demo"><a class="button" href="https://hernanleyez.com.ar">Ver demo <i class="bi bi-globe button-icon"></i></a></span>
                     </div>
                 </div>
             </div>
@@ -203,32 +396,53 @@
 
 
 
+    <!-- Sección de Contacto -->
+    <section class="formcontato container" id="contacto">
+        <div  class="formcontato__contacto">
+            <h4 class="formcontato__title">Contacto</h4>
+            <h2 class="formcontato__subtext">¿Qué tal si trabajamos juntos?</h2>
+            <h3 class="formcontato__subtext">Completá el siguiente formulario para ponernos en contacto</h3>
+            <form class="formcontato__form" name="form" action="https://formsubmit.co/8044883a0f8f58cf3189ed5d4b9dddc6" method="POST">
 
+                <label id="name-label" class="formcontato__label field_ok" for="name">
+                    <p class="formcontato__description">Nombre:</p>
+                    <input class="formcontato__input" id="name" type="text" name="name" autocomplete="off" data-valid="false">
+                    <p id="name-error" class="formcontato__error-message"></p>
+                </label>
 
+                <label id="email-label" class="formcontato__label field_ok" for="email">
+                    <p class="formcontato__description">Email:</p>
+                    <input class="formcontato__input" id="email" type="email" name="email" autocomplete="off" data-valid="false">
+                    <p id="email-error" class="formcontato__error-message"></p>
+                </label>
 
-    
+                <label id="subject-label" class="formcontato__label field_ok" for="subject">
+                    <p class="formcontato__description">Asunto:</p>
+                    <input class="formcontato__input" id="subject" type="text" name="subject" autocomplete="off" data-valid="false">
+                    <p id="subject-error" class="formcontato__error-message"></p>
+                </label>
 
-        <!-- Sección de Footer -->
-        <section class="footer center">
-            <div class="footer__container">
-                <ul class="title__network">
-                    <li class="title__network__item"><a href="https://github.com/JulyAnAr88" target="_blank"><i class="bi bi-github"></i> </a></li>
-                    <li class="title__network__item"><a href="https://www.linkedin.com/in/juli%C3%A1n-arag%C3%B3n-73a061220/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
-                    <li class="title__network__item"><a href="https://www.instagram.com/july.aragorn/" target="_blank"><i class="bi bi-instagram"></i></a></li>
-                    <li class="title__network__item"><a href="https://twitter.com/julyaragorn" target="_blank"><i class="bi bi-twitter"></i></a></li>
-                    <li class="title__network__item"><a href="mailto:july.an.ar88@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a></li>
-                </ul>
-                <p>&copy Copyright Julián Aragón - 2022</p>
-            </div>
-        </section>    
+                <label id="message-label" class="formcontato__label field_ok" for="message">
+                    <p class="formcontato__description">Mensaje:</p>
+                    <textarea class="formcontato__input" rows="5" cols="40" id="message" name="message" autocomplete="off" data-valid="false"></textarea>
+                    <p id="message-error" class="formcontato__error-message little-font"></p>
+                </label>
+
+                <button type="submit" id="submit_button" class="formcontato__button button" disabled>Enviar mensaje <i class="bi bi-send button-icon"></i></button>
+
+            </form>
+        </div>
+    </section>
+
+       
     </div>
 
- <!-- Script del documento JavaScript -->
-<script src="js/nav.js"></script>
-<script src="js/validacion.js"></script>
-<script src="js/Delay.js"></script>
-<script src="https://unpkg.com/scrollreveal"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Script del documento JavaScript -->
+    <script src="js/nav.js"></script>
+    <script src="js/validacion.js"></script>
+    <script src="js/Delay.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-section.menu{
+.menu{
     box-shadow: 0 0 10px #000000;
     background-color: var(--third-color);
     position: fixed;
@@ -11,6 +11,13 @@ section.menu{
     display: flex;
     height: 10vh;
     justify-content: space-between;
+    
+}
+.menu__container{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    height: 4rem;
 }
 
 .menu__header, .menu__nav, .menu__list, .menu__theme, .menu__burguer{
@@ -21,7 +28,7 @@ section.menu{
 }
 
 .menu__header{
-    margin-right: 150px;
+    margin: 0 150px;
 }
 
 .menu__list__item{
@@ -53,8 +60,7 @@ section.menu{
 @media (max-width: 907px) {
     .menu{
         justify-content: space-around;
-        margin: 0 15px 0 0;
-        width: 250px;
+               
     }
     .menu__header{
         font-size: 10px;
@@ -64,6 +70,7 @@ section.menu{
     }
 
     .menu__container{
+        margin:auto;
         flex-flow: row;
         justify-content: space-between;
     }

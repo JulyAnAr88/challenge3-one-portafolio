@@ -1,0 +1,74 @@
+.experience{
+    background-color: var(--bg-color-2);
+    color: var(--letter-color);
+}
+.experience__section__title{
+    display: inline-block;
+    padding-bottom: 15px;
+    margin: 50px 0 25px;
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+
+.experience__websites{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.experience__text{
+    color: var(--main-color);
+}
+
+#wordpress-1{
+    background-image: url('../assets/wordpress-1.png');
+}
+#wordpress-2{
+    background-image: url('../assets/wordpress-2.png');
+}
+
+.experience__img{
+    width: 400px;
+    height: 600px;
+    background-position: top;
+    background-size: cover;
+    box-shadow: 0 0 20px #00000080;
+    border-radius: 10px;
+    margin: 20px 0 20px 0;
+}
+
+.experience__img:hover{
+    animation: change-img-0 6s  linear;
+}
+
+@keyframes change-img-0 {
+    0%{background-image: var(--img-bg-pink)}
+    3%{background-image: url('../assets/escuchadle-1.png')}
+    13%{background-image: url('../assets/escuchadle-1.png')}
+    18%{background-image: var(--img-bg-pink)}
+    21%{background-image: url('../assets/escuchadle-2.png')}
+    31%{background-image: url('../assets/escuchadle-2.png')}
+    36%{background-image: var(--img-bg-pink)}
+    39%{background-image: url('../assets/escuchadle-4.png')}
+    49%{background-image: url('../assets/escuchadle-4.png')}
+    54%{background-image: var(--img-bg-pink)}
+    57%{background-image: url('../assets/escuchadle-5.png')}
+    67%{background-image: url('../assets/escuchadle-5.png')}
+    72%{background-image: var(--img-bg-pink)}
+    75%{background-image: url('../assets/escuchadle-6.png')}
+    85%{background-image: url('../assets/escuchadle-6.png')}
+    90%{background-image: var(--img-bg-pink)}
+    93%{background-image: url('../assets/escuchadle-7.png')}
+    100%{background-image: url('../assets/escuchadle-7.png')}
+}
+
+
+.experience__description{
+    display: block
+}
+
+
+/*Mobile*/
+@media screen and (max-width: 600px) {
+
+}
