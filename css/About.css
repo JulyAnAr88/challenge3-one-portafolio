@@ -1,0 +1,47 @@
+.about{
+    background-color: var(--bg-color);
+    padding: 35px 100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.5fr 0.8fr;
+}
+.about__container{
+    width: 700px;
+    height: 80px;
+}
+
+.about__title{
+    font-size: 32px;
+    text-shadow: 5px 5px 5px var(--letter-color);
+}
+
+.about__signature{
+    transform: scale(0.6);
+    padding: 35px 100px;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .about{
+        grid-template-columns: 1fr;
+        background-image: url("../assets/signatureOp.png");
+        background-repeat: no-repeat;
+        padding: 10px 20px;
+    }
+    .about__title{
+        font-size: 22px;
+    }
+    .about__container{
+        width: 260px;
+        height: 275px;
+    }
+    .about__container p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        margin-left: -5px;
+    }
+    .about__signature{
+        display: none;
+    }
+}

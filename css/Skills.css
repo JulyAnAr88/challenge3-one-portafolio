@@ -1,0 +1,115 @@
+.skills{
+    background-color: var(--bg-color-2);
+    padding: 35px 100px;
+}
+
+.skills__title{
+    text-shadow: 5px 5px 5px var(--letter-color);
+    font-size: 32px;
+}
+
+.skills__column{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.skills-subtitle{
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.skills-cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+}
+.skill-box{
+    width: 6.3rem;
+    height: 6.3rem;
+    margin:1px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    border-radius: .2rem;
+}
+.skill-box:hover, .skill-box-added:hover{
+    transform:scale(1.2);
+    transform: rotate(-10deg); 
+}
+ .skill-icon{
+    font-size: 3rem;
+    color:var(--third-color);
+ }
+ .skill-text{
+    font-size: var(--little-font);
+    text-align: center;
+    margin-top: .5rem;
+    color: var(--third-color);
+    text-transform: uppercase;
+}
+
+.skill-text-added{
+    font-size: var(--little-font);
+    text-align: center;
+    margin-top: .5rem;
+    color: var(--third-color);
+    text-transform: uppercase;
+}
+.skill-box-added{
+    width: 5.9rem;
+    height: 5.9rem;    
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    transform: scale(0.9);
+}
+.skill-icon-added{
+    width: 3.9rem;
+    height: 3.9rem;
+
+}
+
+
+
+/*Mobile*/
+@media screen and (max-width: 600px) {
+
+    .skills{
+        padding: 10px 20px;
+    }
+    .skills__title{
+        font-size: 22px;
+    }
+
+    .skills-subtitle{
+        font-size: 18px;
+    }
+
+    .skill-text{
+        font-size: 13px;
+    }
+
+    .skills__column{
+        grid-template-columns: 1fr;
+    }
+
+    .skill-box{
+        width: 4rem;
+        height: 4rem;
+        margin: 10px;
+    }
+
+    .skill-icon-added{
+        width: 3rem;
+        height: 3rem;
+    }
+    .skill-icon{
+        font-size: 2rem;
+    }
+}
