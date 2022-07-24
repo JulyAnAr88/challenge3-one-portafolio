@@ -102,7 +102,7 @@
     
 }
 .boton_download:hover{
-    background-color: var(--second-color);
+    background-color: var(--four-color);
     transform: scale(1.1);
     color: black;
 }

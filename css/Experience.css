@@ -4,69 +4,124 @@
 }
 .experience__section__title{
     display: inline-block;
-    padding-bottom: 15px;
-    margin: 50px 0 25px;
-    color: var(--main-color);
-    border-bottom: 1px solid var(--main-color);
+    text-shadow: 5px 5px 5px var(--letter-color);
+    font-size: 32px;
 }
 
-.experience__websites{
-    display: flex;
-    flex-flow: row wrap;
+.experience__section__subtitle{
+    
+    font-size: 29px;
+    margin: 20px 20px;
+}
+
+.experience__games, .experience__app{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-around;
+}
+.experiencie__box{
+    padding: 1rem;
+}
+.experience__title{
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
 }
 
 .experience__text{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    justify-content: center;
+    margin: 5px 30px;
     color: var(--main-color);
 }
 
-#wordpress-1{
-    background-image: url('../assets/wordpress-1.png');
-}
-#wordpress-2{
-    background-image: url('../assets/wordpress-2.png');
-}
-
 .experience__img{
-    width: 400px;
-    height: 600px;
-    background-position: top;
+    width: 80%;
+    height: 350px;
+    background-position: bottom;
     background-size: cover;
     box-shadow: 0 0 20px #00000080;
     border-radius: 10px;
-    margin: 20px 0 20px 0;
+    margin: 2rem 1rem 2rem 3rem;
+    padding: auto;
 }
 
-.experience__img:hover{
-    animation: change-img-0 6s  linear;
+#app-0{
+    background-image: url('../assets/experience/carrera-1.jpg');
+}
+
+#app-0:hover{
+    background-image: var(--img-bg-purple);
+    animation: change-img-0 18s infinite linear;
 }
 
 @keyframes change-img-0 {
-    0%{background-image: var(--img-bg-pink)}
-    3%{background-image: url('../assets/escuchadle-1.png')}
-    13%{background-image: url('../assets/escuchadle-1.png')}
-    18%{background-image: var(--img-bg-pink)}
-    21%{background-image: url('../assets/escuchadle-2.png')}
-    31%{background-image: url('../assets/escuchadle-2.png')}
-    36%{background-image: var(--img-bg-pink)}
-    39%{background-image: url('../assets/escuchadle-4.png')}
-    49%{background-image: url('../assets/escuchadle-4.png')}
-    54%{background-image: var(--img-bg-pink)}
-    57%{background-image: url('../assets/escuchadle-5.png')}
-    67%{background-image: url('../assets/escuchadle-5.png')}
-    72%{background-image: var(--img-bg-pink)}
-    75%{background-image: url('../assets/escuchadle-6.png')}
-    85%{background-image: url('../assets/escuchadle-6.png')}
-    90%{background-image: var(--img-bg-pink)}
-    93%{background-image: url('../assets/escuchadle-7.png')}
-    100%{background-image: url('../assets/escuchadle-7.png')}
+    0%{background-image: var(--img-bg-purple)}
+    3%{background-image: url('../assets/experience/carrera-1.jpg')}
+    13%{background-image: url('../assets/experience/carrera-1.jpg')}
+    21%{background-image: var(--img-bg-purple)}
+    24%{background-image: url('../assets/experience/carrera-2.jpg')}
+    34%{background-image: url('../assets/experience/carrera-2.jpg')}
+    46%{background-image: var(--img-bg-purple)}
+    49%{background-image: url('../assets/experience/carrera-3.jpg')}
+    59%{background-image: url('../assets/experience/carrera-3.jpg')}
+    71%{background-image: var(--img-bg-purple)}
+    74%{background-image: url('../assets/experience/carrera-4.jpg')}
+    84%{background-image: url('../assets/experience/carrera-4.jpg')}
+    87%{background-image: var(--img-bg-purple)}
+    90%{background-image: url('../assets/experience/carrera-5.jpg')}
+    100%{background-image: url('../assets/experience/carrera-5.jpg')}
+}
+
+#app-4{
+    background-image: url('../assets/experience/encriptador-1.jpg');
+}
+
+#app-4:hover{
+    animation: change-img-4 5s infinite linear;
+}
+
+@keyframes change-img-4 {
+    0%{background-image: var(--img-bg-purple)}
+    5%{background-image: url('../assets/experience/encriptador-1.jpg')}
+    49%{background-image: url('../assets/experience/encriptador-1.jpg')}
+    54%{background-image: var(--img-bg-purple)}
+    57%{background-image: url('../assets/experience/encriptador-2.jpg')}
+    100%{background-image: url('../assets/experience/encriptador-2.jpg')}
 }
 
 
-.experience__description{
-    display: block
+.experience__repo, .experience__demo{
+    text-align: center;
 }
 
+.experience__repo{
+    background: var(--color-de-fondo);
+    border: 1px solid var(--four-color);
+    color: var(--four-color);  
+    
+}
+.experience__repo:hover{
+    background: #b0c4de;
+    border: 1px solid var(--four-color);
+    transform: scale(1.1);
+    color: #FFFFFF;
+}
+
+.experience__demo{
+    background: var(--third-color);
+    border: none;
+    color: #FFFFFF;
+}
+.experience__demo:hover{
+    background-color: var(--four-color);
+    transform: scale(1.1);
+    color: black;
+}
 
 /*Mobile*/
 @media screen and (max-width: 600px) {
