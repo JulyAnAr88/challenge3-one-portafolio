@@ -4,7 +4,7 @@
 }
 
 .skills__title{
-    text-shadow: 5px 5px 5px var(--letter-color);
+    text-shadow: 3px 3px 3px var(--letter-shadow);
     font-size: 32px;
 }
 
@@ -44,21 +44,21 @@
 }
  .skill-icon{
     font-size: 3rem;
-    color:var(--third-color);
+    color:var(--fifh-color);
  }
  .skill-text{
     font-size: var(--little-font);
     text-align: center;
     margin-top: .5rem;
-    color: var(--third-color);
+    color: var(--fifh-color);
     text-transform: uppercase;
 }
 
 .skill-text-added{
     font-size: var(--little-font);
     text-align: center;
+    color: var(--fifh-color);
     margin-top: .5rem;
-    color: var(--third-color);
     text-transform: uppercase;
 }
 .skill-box-added{

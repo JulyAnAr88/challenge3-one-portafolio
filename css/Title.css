@@ -35,12 +35,12 @@
   }*/
 
 .title__container h1{
-    text-shadow: 1px 1px var(--letter-color), 2px 2px var(--third-color), 3px 3px var(--letter-color), 4px 4px var(--third-color);
+    text-shadow: 1px 1px var(--fourth-color), 2px 2px var(--third-color), 3px 3px var(--fourth-color), 4px 4px var(--third-color);
     
 }
 
 .title__container h2{
-    text-shadow: 1px 1px var(--letter-color),  2px 2px var(--third-color);
+    text-shadow: 1px 1px var(--fourth-color),  2px 2px var(--third-color);
     
 }
 
@@ -69,7 +69,6 @@
 }
 
 .title__network{
-    
     flex-flow: row;
     margin: 15px auto;
     
@@ -82,7 +81,7 @@
 
 .title__network__item:hover{
     transition: 0.2s;
-    color: var(--second-color);
+    
     transform: scale(1.2);
 }
 
@@ -93,25 +92,24 @@
     text-align: center;
 }
 .boton_download{    
-    background: var(--third-color);
+    background: var(--fifh-color);
     border: none;
-    color: #FFFFFF;
     padding: 16px;
     border-radius: 12px;
     cursor: pointer;
     
 }
 .boton_download:hover{
-    background-color: var(--four-color);
+    background-color: var(--fourth-color);
     transform: scale(1.1);
-    color: black;
+    color: var(--main-color);
 }
 
 
 /*Mobile*/
 @media (max-width: 907px) {
     .title{
-        margin: 4rem auto 0 auto;
+        margin: 3.2rem auto 0 auto;
     }
     .title__div{
         grid-template-columns: 1fr;

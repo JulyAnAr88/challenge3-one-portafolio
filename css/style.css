@@ -7,18 +7,19 @@ coloque nas sessões indicadas*/
 :root{
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --color-de-fondo: #F5F5F5;
-   --color-de-link: #000;
-   --main-color: #6d7dc5;
-   --second-color: #ABEDD8;
-   --third-color: #3D84A8;
-   --four-color: #2A7AE4;
+   --color-de-fondo: #D0d2d7;
+   --color-de-link: #3958fc;
+   --main-color: #151515;
+   --second-color: #222222;
+   --third-color: #313131;
+   --fourth-color: #D0d2d7;
+   --fifh-color: #3958fc;
 
-   --bg-color: #E9ECF8;
-   --bg-color-2: #bec7ec;
-   --letter-color: #464646;
-   --letter-border-color: #86D6D3;
-   --letter-color-2: #F5F5F5;
+   --bg-color: #222222;
+   --bg-color-2: #313131;
+   --letter-color: #ffffff;
+   --letter-shadow: #747474;
+   --letter-color-2: #8f8f8f;
 
    --medium-font: 1.25rem;
    
@@ -29,6 +30,7 @@ coloque nas sessões indicadas*/
 body {
     box-sizing: border-box;
     background-color: var(--color-de-fondo) ;
+    color: var(--letter-color);
     font-family: 'Raleway';
     margin: 0;
     padding: 0;
@@ -37,7 +39,7 @@ body {
 
 a{
     text-decoration: none;
-    color: var(--color-de-link);
+    color: var(--letter-color);
 }
 
 h1{
@@ -78,12 +80,13 @@ h4{
     cursor: pointer;
 }
 
-.button-icon{
-    color: var(--letter-color) !important;
-}
 
 .bi{
-    color: var(--third-color);
+    color: var(--fifh-color);
+}
+
+.bi:hover{
+    color: var(--fourth-color);
 }
 
 .medium-font{
@@ -96,8 +99,6 @@ h4{
 }
 
 .divid{
-    
-    width: 75%;
     margin: 10px 0;
 }
 

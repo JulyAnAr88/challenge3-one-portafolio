@@ -1,10 +1,10 @@
 .experience{
     background-color: var(--bg-color-2);
-    color: var(--letter-color);
+    padding: 5px 0;
 }
 .experience__section__title{
     display: inline-block;
-    text-shadow: 5px 5px 5px var(--letter-color);
+    text-shadow: 3px 3px 3px var(--letter-shadow);
     font-size: 32px;
 }
 
@@ -35,8 +35,8 @@
     text-align: center;
     
     justify-content: center;
-    margin: 5px 30px;
-    color: var(--main-color);
+    margin: 5px 30px;    
+    color: var(--letter-color-2);
 }
 
 .experience__img{
@@ -77,6 +77,37 @@
     100%{background-image: url('../assets/experience/carrera-5.jpg')}
 }
 
+#app-1{
+    background-image: url('../assets/experience/ahorcado-3.jpg');
+}
+
+#app-1:hover{
+    background-image: var(--img-bg-blue);
+    animation: change-img-1 18s infinite linear;
+}
+
+@keyframes change-img-1 {
+    0%{background-image: var(--img-bg-blue)}
+    3%{background-image: url('../assets/experience/ahorcado-1.jpg')}
+    13%{background-image: url('../assets/experience/ahorcado-1.jpg')}
+    18%{background-image: var(--img-bg-blue)}
+    21%{background-image: url('../assets/experience/ahorcado-2.jpg')}
+    31%{background-image: url('../assets/experience/ahorcado-2.jpg')}
+    36%{background-image: var(--img-bg-blue)}
+    39%{background-image: url('../assets/experience/ahorcado-2.1.jpg')}
+    49%{background-image: url('../assets/experience/ahorcado-2.1.jpg')}
+    54%{background-image: var(--img-bg-blue)}
+    57%{background-image: url('../assets/experience/ahorcado-3.jpg')}
+    67%{background-image: url('../assets/experience/ahorcado-3.jpg')}
+    72%{background-image: var(--img-bg-blue)}
+    75%{background-image: url('../assets/experience/ahorcado-3.1.jpg')}
+    85%{background-image: url('../assets/experience/ahorcado-3.1.jpg')}
+    90%{background-image: var(--img-bg-blue)}
+    93%{background-image: url('../assets/experience/ahorcado-5.jpg')}
+    100%{background-image: url('../assets/experience/ahorcado-5.jpg')}
+}
+
+
 #app-4{
     background-image: url('../assets/experience/encriptador-1.jpg');
 }
@@ -102,7 +133,7 @@
 .experience__repo{
     background: var(--color-de-fondo);
     border: 1px solid var(--four-color);
-    color: var(--four-color);  
+    color: var(--fifh-color);  
     
 }
 .experience__repo:hover{
@@ -115,7 +146,7 @@
 .experience__demo{
     background: var(--third-color);
     border: none;
-    color: #FFFFFF;
+    color: var(--fifh-color);
 }
 .experience__demo:hover{
     background-color: var(--four-color);
@@ -123,7 +154,57 @@
     color: black;
 }
 
+.experience__video {
+        
+    margin: 2rem 1rem 2rem 3rem;
+    padding: 1rem; 
+}
+
 /*Mobile*/
 @media screen and (max-width: 600px) {
+    .experience__games, .experience__app{
+        grid-template-columns: 1fr;
+    }
+    .experience_container{
+        margin: 0 0.5rem;
+    }
+    .experiencie__box {
+        padding: 0.5rem 0;
+    }
+    .experience__section__title{
+        
+        font-size: 22px;
+    }
+    .experience__section__subtitle{
+        margin: 10px 0;
+        font-size: 19px;
+    }
 
+    .experience__title{
+        
+        font-size: 18px;
+    }
+
+    .experience__text{   
+        margin: 0;
+        width: 300px;
+    }
+
+    .experience__img{
+        width: 300px;
+        height: 220px;
+        margin: 0.5rem 0;
+    }
+    
+    .experience__video {
+        margin: 0;
+        padding: 0.5rem; 
+    }
+    .experience__video iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:relative;
+    }
 }

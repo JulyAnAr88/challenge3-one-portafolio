@@ -26,17 +26,16 @@
     <!-- icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"/>
     <script src="https://kit.fontawesome.com/f570856479.js" crossorigin="anonymous"></script>
-    <title> Mi Portafolio</title>
+    
 </head>
 <body>
     
     <div class="tudo">
         
         <img class="btn-whatsapp" src="https://clientes.dongee.com/whatsapp.png" width="64" height="64" alt="Whatsapp" onclick="window.location.href='https://wa.me/5493425387363?text=¡Hola!%20Estoy%20interesadx%20en%20tu%20curriculum'">
-        
         <!-- Sección del Menú  -->
         <section class="menu">
-            <div class="menu__container">
+            <div class="menu__container container">
             <header class="menu__header">
                 <h3 class="menu__title">JA | Math 🧮 | Dev. 💻</h3>
             </header>
@@ -45,7 +44,7 @@
                     <li class="menu__list__item"><a href="#inicio" active>Inicio</a></li>
                     <li class="menu__list__item"><a href="#sobre-mi">Sobre mí</a></li>
                     <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                    <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
+                    <li class="menu__list__item"><a href="#hobbies">Hobbits</a></li>
                     <li class="menu__list__item"><a href="#formacion">Formación</a></li>
                     <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
                     <li class="menu__list__item"><a href="#contacto">Contacto</a></li>
@@ -60,15 +59,16 @@
 
         <!-- Sección del Header/Title/Hero -->
     <section class="title" id="inicio">
-        <div class="title__div">
+        <div class="title__div container">
             <img class="title__profile" src="assets\profile.png">
             <div class="title__container">
                 <h3 class="title__hello">¡Hola! 🙋‍♂️ mi nombre es ...</h3>
                 <hr class="divider">
                 <h1 class="title__name animate__animated animate__flipInX animate__delay-1s">Julián Aragón</h1>
                 <h2 class="title__rol"> < Profe de Matemática y desarrollador/></h2>
-                <p class="title__description medium-font animate__animated animate__flipInX animate__delay-2s">Ayudo a construir conocimiento matemático, desarrollo profesionales y atractivas páginas web, videojuegos, aplicaciones, etc.</p>
-                <span class="download center"><a href="https://bit.ly/3b446G4"><button class="boton_download">
+                <p class="title__description medium-font">Ayudo a construir conocimiento matemático, desarrollo profesionales y atractivas páginas web, videojuegos, aplicaciones, etc.</p>
+                <span class="download center"><a href="https://bit.ly/3b446G4">
+                    <button class="boton_download button-icon">
                     DESCARGAR CV <i class="fa-solid fa-download"></i></button></a></span>
                 <ul class="title__network center">
                     <li class="title__network__item"><a href="https://github.com/JulyAnAr88" target="_blank"><i class="bi bi-github"></i> </a></li>
@@ -83,7 +83,7 @@
 
     <!-- Sección sobre mi -->
     <section class="about" id="sobre-mi">
-        <div class="about__container">
+        <div class="about__container container">
             <h3 class="about__title">Sobre mí</h3>
             <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia.  </p>
             <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
@@ -96,6 +96,7 @@
 
     <!-- Sección de Skills -->
     <section class="skills" id="skills">
+        <div class="skills_container container">
         <h3 class="skills__title">Habilidades</h3>
         <div class="skills__column">
 
@@ -204,6 +205,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </section>
 
     <!-- Sección de Formación académica -->
@@ -367,7 +369,7 @@
         <div class="experience_container container">
             <h3 class="experience__section__title">Proyectos</h3>
             <h2 class="experience__section__subtitle center" >Juegos 🕹️</h2>
-            <hr class="divid center">
+            <div><hr class="divid center"></div>
             <div class="experience__games">
                 
                 <div class="experiencie__box">
@@ -383,14 +385,14 @@
                 </div>
 
                 <div class="experiencie__box">
-                    <h2 class="experience__title">Encriptador de textos <i class='fa-solid fa-unlock-keyhole'></i></h2>
-                    <h3 class="experience__text">Challenge Alura Codificador</h3>
-                    <a href="https://julyanar88.github.io/ChallengerONE.1/" target="_blank">
-                        <div class="experience__img" id="app-4"></div>
+                    <h2 class="experience__title">Juego del ahorcado <i class="fa-solid fa-lasso"></i></h2>
+                    <h3 class="experience__text">Challenge Alura Oracle - HTML y JavaScript</h3>
+                    <a href="https://julyanar88.github.io/ChallengeONE.2/" target="_blank">
+                        <div class="experience__img" id="app-1"></div>
                     </a>
                     <div class="experience__app__description center">
-                        <span><a href="https://github.com/JulyAnAr88/ChallengerONE.1"><button class="boton experience__repo">Repositorio <i class="bi bi-github button-icon"></i></button></a></span>
-                        <span><a href="https://julyanar88.github.io/ChallengerONE.1/"><button class="boton experience__demo">Ver demo <i class="bi bi-globe button-icon"></i></button></a></span>
+                        <span><a href="https://github.com/JulyAnAr88/ChallengeONE.2"><button class="boton experience__repo">Repositorio <i class="bi bi-github button-icon"></i></button></a></span>
+                        <span><a href="https://julyanar88.github.io/ChallengeONE.2/"><button class="boton experience__demo">Ver demo <i class="bi bi-globe button-icon"></i></button></a></span>
                     </div>
                 </div>
             </div>
@@ -399,9 +401,11 @@
                 <h2 class="experience__title">Escape del laberinto <i class="fa-solid fa-sword"></i></h2>
                 <h3 class="experience__text">Proyecto en Unreal Engine 4.</h3>
                 <div class="experience__video center">
-                    <iframe width="555" height="300" src="https://www.youtube.com/embed/GKh65x52A6c" title="YouTube video player" 
-                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen></iframe>
+                    <iframe width="555" height="300" 
+                    src="https://www.youtube.com/embed/GKh65x52A6c" 
+                    title="YouTube video player" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
                 </div>
             </div>
             
@@ -410,7 +414,7 @@
             <div class="experience__app">
                 <div class="experiencie__box">
                     <h2 class="experience__title">Encriptador de textos <i class='fa-solid fa-unlock-keyhole'></i></h2>
-                    <h3 class="experience__text">Challenge Alura Codificador</h3>
+                    <h3 class="experience__text">Challenge Alura Oracle</h3>
                     <a href="https://julyanar88.github.io/ChallengerONE.1/" target="_blank">
                         <div class="experience__img" id="app-4"></div>
                     </a>
@@ -420,14 +424,17 @@
                     </div>
                 </div>
                 <div class="experiencie__box">
-                    <h2 class="experience__title">Encriptador de textos <i class='fa-solid fa-unlock-keyhole'></i></h2>
-                    <h3 class="experience__text">Challenge Alura Codificador</h3>
-                    <a href="https://julyanar88.github.io/ChallengerONE.1/" target="_blank">
-                        <div class="experience__img" id="app-4"></div>
-                    </a>
+                    <h2 class="experience__title">Monitoring System - Beta 0.9 <i class="fa-regular fa-calendar-days"></i></h2>
+                    <h3 class="experience__text">Proyecto final Certificación Java</h3>
+                    <div class="experience__video">
+                        <iframe width="555" height="300" src="https://www.youtube.com/embed/uSV-ZUnVRLg" 
+                        title="YouTube video player" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                    </div>
                     <div class="experience__app__description center">
-                        <span><a href="https://github.com/JulyAnAr88/ChallengerONE.1"><button class="boton experience__repo">Repositorio <i class="bi bi-github button-icon"></i></button></a></span>
-                        <span><a href="https://julyanar88.github.io/ChallengerONE.1/"><button class="boton experience__demo">Ver demo <i class="bi bi-globe button-icon"></i></button></a></span>
+                        <span><a href="https://github.com/JulyAnAr88/MonitoringSystem"><button class="boton experience__repo">Repositorio <i class="bi bi-github button-icon"></i></button></a></span>
+                        
                     </div>
                 </div>
 
@@ -439,14 +446,13 @@
     </section>
 
 
-
     <!-- Sección de Contacto -->
-    <section class="formcontato container" id="contacto">
-        <div  class="formcontato__contacto">
-            <h4 class="formcontato__title">Contacto</h4>
+    <section class="formcontato" id="contacto">
+        <div  class="formcontato__contacto container">
+            <h3 class="formcontato__title">Contacto</h3>
             <h2 class="formcontato__subtext">¿Qué tal si trabajamos juntos?</h2>
-            <h3 class="formcontato__subtext">Completá el siguiente formulario para ponernos en contacto</h3>
-            <form class="formcontato__form" name="form" action="https://formsubmit.co/8044883a0f8f58cf3189ed5d4b9dddc6" method="POST">
+            <h2 class="formcontato__subtext">Completá el siguiente formulario para ponernos en contacto</h2>
+            <form class="formcontato__form" name="form" action="https://formsubmit.co/july.an.ar88@gmail.com" method="POST">
 
                 <label id="name-label" class="formcontato__label field_ok" for="name">
                     <p class="formcontato__description">Nombre:</p>
@@ -472,13 +478,13 @@
                     <p id="message-error" class="formcontato__error-message little-font"></p>
                 </label>
 
-                <button type="submit" id="submit_button" class="formcontato__button button" disabled>Enviar mensaje <i class="bi bi-send button-icon"></i></button>
+                <button type="submit" id="submit_button" class="formcontato__button boton">Enviar mensaje <i class="bi bi-send button-icon"></i></button>
 
             </form>
         </div>
     </section>
 
-       
+        
     </div>
 
     <!-- Script del documento JavaScript -->

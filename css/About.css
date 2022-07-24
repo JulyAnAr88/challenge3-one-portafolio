@@ -12,7 +12,7 @@
 
 .about__title{
     font-size: 32px;
-    text-shadow: 5px 5px 5px var(--letter-color);
+    text-shadow: 3px 3px 3px var(--letter-shadow);
 }
 
 .about__signature{
