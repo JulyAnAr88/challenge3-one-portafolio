@@ -212,6 +212,19 @@
     box-shadow: 0 0 20px var(--letter-shadow);
 }
 
+.experiencie__box__video{
+    display: block;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.proyecto__video {
+    width: 80%;
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem 0.5rem 16rem;     
+    max-width: 600px;
+}
+
 /*Mobile*/
 @media screen and (max-width: 600px) {
     .experience__games, .experience__app{
@@ -258,5 +271,12 @@
         height:100%;
         width:100%;
         position:relative;
+    }
+
+    .proyecto__video {
+        margin: 0.5rem 0;
+        padding: 0;
+        width: 100vw; 
+        max-width: 300px;
     }
 }

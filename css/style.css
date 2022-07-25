@@ -27,6 +27,8 @@ coloque nas sessões indicadas*/
    --img-bg-purple: url('../assets/bg-purple.png');
 }
 
+
+
 body {
     box-sizing: border-box;
     background-color: var(--color-de-fondo) ;
@@ -120,6 +122,14 @@ img.btn-whatsapp:hover{
 	transition-duration: 1s;
 } 
 
+.fa-satellite-dish:before {
+    content: "\f7c0";
+}
+.fa-ruler-triangle:before {
+    content: "\f61c";
+}
+
+   
 /*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
 
 Lo que es el BEM?
