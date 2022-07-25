@@ -44,7 +44,7 @@
     height: 350px;
     background-position: bottom;
     background-size: cover;
-    box-shadow: 0 0 20px #00000080;
+    box-shadow: 0 0 20px var(--letter-shadow);
     border-radius: 10px;
     margin: 2rem 1rem 2rem 3rem;
     padding: auto;
@@ -61,20 +61,20 @@
 
 @keyframes change-img-0 {
     0%{background-image: var(--img-bg-purple)}
-    3%{background-image: url('../assets/experience/carrera-1.jpg')}
-    13%{background-image: url('../assets/experience/carrera-1.jpg')}
+    3%{background-image: url('../assets/experience/carrera-2.jpg')}
+    13%{background-image: url('../assets/experience/carrera-2.jpg')}
     21%{background-image: var(--img-bg-purple)}
-    24%{background-image: url('../assets/experience/carrera-2.jpg')}
-    34%{background-image: url('../assets/experience/carrera-2.jpg')}
+    24%{background-image: url('../assets/experience/carrera-3.jpg')}
+    34%{background-image: url('../assets/experience/carrera-3.jpg')}
     46%{background-image: var(--img-bg-purple)}
-    49%{background-image: url('../assets/experience/carrera-3.jpg')}
-    59%{background-image: url('../assets/experience/carrera-3.jpg')}
+    49%{background-image: url('../assets/experience/carrera-4.jpg')}
+    59%{background-image: url('../assets/experience/carrera-4.jpg')}
     71%{background-image: var(--img-bg-purple)}
-    74%{background-image: url('../assets/experience/carrera-4.jpg')}
-    84%{background-image: url('../assets/experience/carrera-4.jpg')}
+    74%{background-image: url('../assets/experience/carrera-5.jpg')}
+    84%{background-image: url('../assets/experience/carrera-5.jpg')}
     87%{background-image: var(--img-bg-purple)}
-    90%{background-image: url('../assets/experience/carrera-5.jpg')}
-    100%{background-image: url('../assets/experience/carrera-5.jpg')}
+    90%{background-image: url('../assets/experience/carrera-1.jpg')}
+    100%{background-image: url('../assets/experience/carrera-1.jpg')}
 }
 
 #app-1{
@@ -82,27 +82,27 @@
 }
 
 #app-1:hover{
-    background-image: var(--img-bg-blue);
+    background-image: var(--img-bg-purple);
     animation: change-img-1 18s infinite linear;
 }
 
 @keyframes change-img-1 {
-    0%{background-image: var(--img-bg-blue)}
+    0%{background-image: var(--img-bg-purple)}
     3%{background-image: url('../assets/experience/ahorcado-1.jpg')}
     13%{background-image: url('../assets/experience/ahorcado-1.jpg')}
-    18%{background-image: var(--img-bg-blue)}
+    18%{background-image: var(--img-bg-purple)}
     21%{background-image: url('../assets/experience/ahorcado-2.jpg')}
     31%{background-image: url('../assets/experience/ahorcado-2.jpg')}
-    36%{background-image: var(--img-bg-blue)}
+    36%{background-image: var(--img-bg-purple)}
     39%{background-image: url('../assets/experience/ahorcado-2.1.jpg')}
     49%{background-image: url('../assets/experience/ahorcado-2.1.jpg')}
-    54%{background-image: var(--img-bg-blue)}
+    54%{background-image: var(--img-bg-purple)}
     57%{background-image: url('../assets/experience/ahorcado-3.jpg')}
     67%{background-image: url('../assets/experience/ahorcado-3.jpg')}
-    72%{background-image: var(--img-bg-blue)}
+    72%{background-image: var(--img-bg-purple)}
     75%{background-image: url('../assets/experience/ahorcado-3.1.jpg')}
     85%{background-image: url('../assets/experience/ahorcado-3.1.jpg')}
-    90%{background-image: var(--img-bg-blue)}
+    90%{background-image: var(--img-bg-purple)}
     93%{background-image: url('../assets/experience/ahorcado-5.jpg')}
     100%{background-image: url('../assets/experience/ahorcado-5.jpg')}
 }
@@ -118,13 +118,63 @@
 
 @keyframes change-img-4 {
     0%{background-image: var(--img-bg-purple)}
-    5%{background-image: url('../assets/experience/encriptador-1.jpg')}
-    49%{background-image: url('../assets/experience/encriptador-1.jpg')}
+    5%{background-image: url('../assets/experience/encriptador-2.jpg')}
+    49%{background-image: url('../assets/experience/encriptador-2.jpg')}
     54%{background-image: var(--img-bg-purple)}
-    57%{background-image: url('../assets/experience/encriptador-2.jpg')}
-    100%{background-image: url('../assets/experience/encriptador-2.jpg')}
+    57%{background-image: url('../assets/experience/encriptador-1.jpg')}
+    100%{background-image: url('../assets/experience/encriptador-1.jpg')}
 }
 
+#app-6{
+    background-image: url('../assets/experience/p1.jpg');
+}
+
+#app-6:hover{
+    background-image: var(--img-bg-purple);
+    animation: change-img-6 18s infinite linear;
+}
+
+@keyframes change-img-6 {
+    0%{background-image: var(--img-bg-purple)}
+    3%{background-image: url('../assets/experience/p2.jpg')}
+    13%{background-image: url('../assets/experience/p2.jpg')}
+    18%{background-image: var(--img-bg-purple)}
+    21%{background-image: url('../assets/experience/p3.jpg')}
+    31%{background-image: url('../assets/experience/p3.jpg')}
+    36%{background-image: var(--img-bg-purple)}
+    39%{background-image: url('../assets/experience/p4.jpg')}
+    49%{background-image: url('../assets/experience/p4.jpg')}
+    54%{background-image: var(--img-bg-purple)}
+    57%{background-image: url('../assets/experience/p5.jpg')}
+    67%{background-image: url('../assets/experience/p5.jpg')}
+    72%{background-image: var(--img-bg-purple)}
+    75%{background-image: url('../assets/experience/p6.jpg')}
+    85%{background-image: url('../assets/experience/p6.jpg')}
+    90%{background-image: var(--img-bg-purple)}
+    93%{background-image: url('../assets/experience/p7.jpg')}
+    100%{background-image: url('../assets/experience/p7.jpg')}
+}
+
+#app-7{
+    background-image: url('../assets/experience/dym-1.jpg');
+}
+
+#app-7:hover{
+    background-image: var(--img-bg-purple);
+    animation: change-img-7 10s infinite linear;
+}
+
+@keyframes change-img-7 {
+    0%{background-image: var(--img-bg-purple)}
+    3%{background-image: url('../assets/experience/dym-2.jpg')}
+    13%{background-image: url('../assets/experience/dym-2.jpg')}
+    46%{background-image: var(--img-bg-purple)}
+    49%{background-image: url('../assets/experience/dym-3.jpg')}
+    59%{background-image: url('../assets/experience/dym-3.jpg')}
+    87%{background-image: var(--img-bg-purple)}
+    90%{background-image: url('../assets/experience/dym-4.jpg')}
+    100%{background-image: url('../assets/experience/dym-4.jpg')}
+}
 
 .experience__repo, .experience__demo{
     text-align: center;
@@ -155,9 +205,11 @@
 }
 
 .experience__video {
-        
     margin: 2rem 1rem 2rem 3rem;
     padding: 1rem; 
+}
+.experience__video iframe{
+    box-shadow: 0 0 20px var(--letter-shadow);
 }
 
 /*Mobile*/
