@@ -1,38 +1,71 @@
 .title{
     color: var(--letter-color);
-    margin: 4rem auto 0 auto;
-    background-color: var(--bg-color-2);
+    
 }
 
-.title__div{
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    justify-content: center;
-    align-items: center;
-}
-
-/*.title__rol{
-    width: 39ch;
-  animation: typing 3s steps(22), blink .6s step-end infinite;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-family: monospace;
-  font-size: 2em;
-}
-@keyframes typing {
-    from {
-      width: 0;
-    }
-   
+.title__image {
+    background-image: var(--hero-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: var(--hero-attachment);
   }
   
-  @keyframes blink {
+  .title__image__opacity {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--hero-opacity-color);
+  }
+
+
+.title__hello{
+    transition: all 0.4s ease;
+  animation: blink 0.7s infinite;
+  overflow: hidden;
+}
+
+.title__rol{
+    position: relative;
+}
+
+.title__rol::after {
+    content: " />";
+    right: 0;
+}
+
+.title__rol::before {
+    content: "< ";
+}
+
+.title__rol::after,
+.title__rol::before {
+  position: relative;
+  color: var(--color-de-link);
+  animation: pulse 2s ease-out infinite;
+}
+
+
+@keyframes pulse {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1.5);
+    }
+}
+  
+@keyframes blink {
     50% {
       border-color: transparent;
-    }
-  }*/
+    } 
+} 
+
 
 .title__container h1{
     text-shadow: 1px 1px var(--fourth-color), 2px 2px var(--third-color), 3px 3px var(--fourth-color), 4px 4px var(--third-color);
@@ -80,43 +113,14 @@
 }
 
 .title__network__item:hover{
-    transition: 0.2s;
-    
+    transition: 0.2s;    
     transform: scale(1.2);
-}
-
-.dowload{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.boton_download{    
-    background: var(--fifh-color);
-    border: none;
-    padding: 16px;
-    border-radius: 12px;
-    cursor: pointer;
-    
-}
-.boton_download:hover{
-    background-color: var(--fourth-color);
-    transform: scale(1.1);
-    color: var(--main-color);
 }
 
 
 /*Mobile*/
 @media (max-width: 907px) {
-    .title{
-        margin: 3.2rem auto 0 auto;
-    }
-    .title__div{
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.6fr;
-        padding: 0 10px 15px 10px;
-    }
-      
+          
     .title__name, .title__rol, .title__description{
         text-align: center;
     }
@@ -129,6 +133,5 @@
     }
     .title__rol{
         font-size: 1.4em;
-       animation: none;
     }
 }

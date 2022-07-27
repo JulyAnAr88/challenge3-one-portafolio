@@ -1,3 +1,27 @@
+//-------TYPING EFFECT------//
+const $text = document.querySelector(".title__hello");
+let str = $text.innerHTML;
+let i = 0;
+
+$text.innerHTML = "";
+
+function typing() {
+  if (i < str.length) {
+    $text.innerHTML += str.charAt(i);
+    i++;
+    setTimeout(typing, 200);
+  } else {
+    setTimeout(() => {
+      $text.innerHTML = "";
+      i = 0;
+      setTimeout(typing, 200);
+    }, 2000);
+  }
+}
+
+setTimeout(typing, 1500);
+
+//-------NAV MENU------//
 const navButton = document.querySelector(".menu__burguer");
 const navMenu = document.querySelector(".menu__nav");
 
@@ -20,3 +44,10 @@ navItems.forEach( item => item.addEventListener("click", () => {
     x.classList.add("menu_hidden");
     })
 )
+
+//-------SCROLL ANIMATION------//
+//animacion de la pagina
+window.sr = ScrollReveal({ reset: true });
+sr.reveal(".sobre-mi")
+sr.reveal(".skills", {duration: 200})
+sr.reveal(".about", {origin: 'right', distance: '300px', duration: 2000});

@@ -1,13 +1,23 @@
 .about{
     background-color: var(--bg-color);
+    box-shadow: 0 0 10px var(--letter-shadow);
+    
+    background-image: url("../assets/signatureOp.png");
+    background-repeat: no-repeat;
     padding: 35px 100px;
     margin: auto;
     display: grid;
-    grid-template-columns: 1.5fr 0.8fr;
+    grid-template-columns: 1fr 1fr;
 }
 .about__container{
-    width: 700px;
-    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 550px;
+    height: 550px;
+    gap: 6px;
 }
 
 .about__title{
@@ -20,12 +30,14 @@
     padding: 35px 100px;
 }
 
+.download{
+    margin-bottom: 0.5rem;
+}
+
 @media screen and (max-width: 600px) {
     
     .about{
         grid-template-columns: 1fr;
-        background-image: url("../assets/signatureOp.png");
-        background-repeat: no-repeat;
         padding: 10px 20px;
     }
     .about__title{
@@ -33,7 +45,7 @@
     }
     .about__container{
         width: 260px;
-        height: 295px;
+        height: 1095px;
     }
     .about__container p{
         font-size: 14px;

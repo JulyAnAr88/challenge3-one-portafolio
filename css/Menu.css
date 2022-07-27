@@ -1,7 +1,7 @@
 .menu{
     box-shadow: 0 0 10px var(--letter-shadow);
     background-color: var(--main-color);
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     z-index: 100;
@@ -64,7 +64,7 @@
 }
 
 /*Mobile*/
-@media (max-width: 907px) {
+@media (max-width: 1200px) {
     .menu{
         justify-content: space-around;
                
@@ -79,7 +79,6 @@
     .menu__container{
         justify-content: space-around;
         margin:0;
-        height: 3.5rem;
     }
 
     .menu__nav{

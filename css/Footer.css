@@ -1,0 +1,10 @@
+.footer{
+    background-color: var(--bg-color-2);
+    
+}
+
+.footer__container{
+    padding: 1rem;
+    width: 700px;
+    height: 80px;
+}

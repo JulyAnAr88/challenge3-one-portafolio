@@ -182,21 +182,18 @@
 
 .experience__repo{
     background: var(--color-de-fondo);
-    border: 1px solid var(--four-color);
+    border: 1px solid var(--fourth-color);
     color: var(--fifh-color);  
     
 }
 .experience__repo:hover{
-    background: #b0c4de;
     border: 1px solid var(--four-color);
     transform: scale(1.1);
     color: #FFFFFF;
 }
 
 .experience__demo{
-    background: var(--third-color);
     border: none;
-    color: var(--fifh-color);
 }
 .experience__demo:hover{
     background-color: var(--four-color);
