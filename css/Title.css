@@ -1,26 +1,18 @@
 .title{
     color: var(--letter-color);
-    
+    background-image: url("../assets/hero-image-home.jpeg");
+    background-repeat: round;
+    background-attachment: fixed;
 }
 
-.title__image {
-    background-image: var(--hero-image);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: var(--hero-attachment);
-  }
-  
-  .title__image__opacity {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
+.title__div{
+    background-color: var(--black-alpha-color);
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    background-color: var(--hero-opacity-color);
-  }
-
+}
 
 .title__hello{
     transition: all 0.4s ease;
@@ -41,24 +33,7 @@
     content: "< ";
 }
 
-.title__rol::after,
-.title__rol::before {
-  position: relative;
-  color: var(--color-de-link);
-  animation: pulse 2s ease-out infinite;
-}
 
-
-@keyframes pulse {
-    0% {
-      opacity: 1;
-      transform: scale(1);
-    }
-    100% {
-      opacity: 0;
-      transform: scale(1.5);
-    }
-}
   
 @keyframes blink {
     50% {
@@ -101,13 +76,15 @@
     margin: 15px 0 15px 0;
 }
 
-.title__network{
+.titleN{
+    color: var(--main-color);
     flex-flow: row;
     margin: 15px auto;
     
 }
 
 .title__network__item{
+    
     margin: 5px 15px;
     font-size: 1.5rem;
 }
@@ -121,6 +98,12 @@
 /*Mobile*/
 @media (max-width: 907px) {
           
+    .title__div{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.6fr;
+        padding: 0 10px 15px 10px;
+    }
+
     .title__name, .title__rol, .title__description{
         text-align: center;
     }

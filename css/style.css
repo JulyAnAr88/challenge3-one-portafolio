@@ -21,6 +21,7 @@ coloque nas sessões indicadas*/
    --letter-color: #ffffff;
    --letter-shadow: #747474;
    --letter-color-2: #8f8f8f;
+   --black-alpha-color: rgba(0, 0, 0, 0.5);
 
    --medium-font: 1.25rem;
    
@@ -31,7 +32,7 @@ coloque nas sessões indicadas*/
 
 
 body {
-    box-sizing: border-box;
+    box-sizing: inherit;
     overflow-x: hidden;
     color: var(--letter-color);
     font-family: 'Raleway';

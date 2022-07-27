@@ -45,9 +45,4 @@ navItems.forEach( item => item.addEventListener("click", () => {
     })
 )
 
-//-------SCROLL ANIMATION------//
-//animacion de la pagina
-window.sr = ScrollReveal({ reset: true });
-sr.reveal(".sobre-mi")
-sr.reveal(".skills", {duration: 200})
-sr.reveal(".about", {origin: 'right', distance: '300px', duration: 2000});
+
